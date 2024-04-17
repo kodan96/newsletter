@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    font-size: 14px;
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--DarkSlateGrey);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    flex-shrink: 2;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-block: 1em .5em;
+}
+
+p {
+    margin-block: 1em 2em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    margin-block: 1em;
+}
+
+li::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-image: url(img/icon-list.svg);
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+}
+
+form {
+    margin-block: 2em 1.5em;
+    position: relative;
+}
+
+.error {
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+label {
+    display: block;
+    font-size: .8em;
+    font-weight: 700;
+    margin-block: 1em;
+    color: var(--DarkSlateGrey);
+}
+
+#email {
+    padding: 1.2em;
+    width: 100%;
+    border: 1px solid var(--Grey);
+    border-radius: 7px;
+}
+
+.btn-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1.2em 2em;
+    display: block;
+    background-color: var(--DarkSlateGrey);
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+
+
+.img-wrapper {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+}
+
+.container2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card img {
+    margin: 8rem 0 2rem;
+    width: 60px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    line-height: 1em;
+    margin-bottom: .5em;
+}
+
+.card p {
+    font-size: 1.2em;
+}
+
+.email-sent {
+    font-weight: 700;
+}
+
+.dismiss {
+    margin-bottom: 2em;
+    position: fixed;
+    margin: 2em auto;
+    width: 90%;
+    bottom: 0;
+}
+
+.card {
+   display: none;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--CharcoalGrey);
+    }
+    main {
+        background-color: #fff;
+        display: flex;
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 1.5rem;
+        border-radius: 25px;
+        align-items: center;
+        min-width: 700px;
+    }
+
+    .container {
+        margin-right: 2em;
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .hero-img {
+        content: url(img/illustration-sign-up-desktop.svg);
+        max-width: 40%;
+        order: 1;
+    }
+    .card {
+        background-color: #fff;
+        position: relative;
+        border-radius: 15px;
+        width: 500px;
+    }
+
+    .container2 {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .card img {
+        margin-top: 2rem;
+    }
+
+    .dismiss {
+        position: static;
+    }
+
+    
+
+}
